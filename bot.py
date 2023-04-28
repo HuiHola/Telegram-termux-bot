@@ -7,12 +7,12 @@ import sys
 async def help(update,context):
     await update.message.reply_text('''
 
-    /torch_on ---> torch on
-    /open_google ---> open google app
-    call: number ---> call the number you give
-    msg: number text ---> send text message on number
+    /torch_on 		---> torch on
+    /open_google 	---> open google app
+    call:number 	---> call the number you give
+    msg:number text 	---> send text message on number
 
-    NOTE:- don't give sapce after : colan
+    NOTE:- don't give sapce after ':' colon
                                     ''')
 async def torch_on(Update,Context):
 	os.system("termux-torch on")
@@ -47,11 +47,11 @@ async def msg(update,context):
             await update.message.replay_text(output)
     else:
         await update.message.reply_text('''
-        /torch_on ---> torch on
-        /open_google ---> open google app
-        call: number ---> call the number you give
-        msg: number text ---> send text message on number
-        NOTE:- don't give sapce after : colan
+        /torch_on 		---> torch on
+        /open_google 	-	---> open google app
+        call: number 		---> call the number you give
+        msg: number text 	---> send text message on number
+        NOTE:- don't give sapce after ':' colon
                                          ''')
 try:
     TOKEN=sys.argv[1]
